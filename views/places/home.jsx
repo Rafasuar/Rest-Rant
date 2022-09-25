@@ -3,7 +3,7 @@ const Def = require('./default')
 
 function home () {
     return (
-        <Def>
+        <def>
             <main>
                 <h1>Home</h1>
                 <a href="/places">
@@ -11,7 +11,7 @@ function home () {
                 </a>
 
             </main>
-        </Def>
+        </def>
     )
 }
 
