@@ -3,12 +3,13 @@ const Def = require('./default')
 
 function error404 () {
     return(
-        <def>
-            <main>
+        <Def>
+            <main className='errorpge'>
                 <h1>404:PAGE NOT FOUND</h1>
-                <p>This is not the page you are looking for.</p>
+                <p className='errormsg'>This is not the page you are looking for.</p>
+                <img className="jupiter" src='/images/angryjoopie.PNG'/>
             </main>
-        </def>
+        </Def>
     )
 }
 

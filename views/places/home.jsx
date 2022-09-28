@@ -3,15 +3,18 @@ const Def = require('./default')
 
 function home () {
     return (
-        <def>
+        <Def>
             <main>
                 <h1>Home</h1>
+                <div>
+                    <img src='/images/tacoPlate.jpg' alt='Carne Asada Taco Plate'/>
+                </div>
                 <a href="/places">
                     <button className="btn btn-primary">Places Page</button>
                 </a>
 
             </main>
-        </def>
+        </Def>
     )
 }
 

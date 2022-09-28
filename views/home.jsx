@@ -6,6 +6,13 @@ function home () {
         <Def>
             <main>
                 <h1>Home</h1>
+                <div>
+                    <img className='tp' src='/images/tacoPlate.jpg' alt='Carne Asada Taco Plate'/>
+                    <div>
+                        Photo by <a href='https://www.pexels.com/@chitokan/'>Chitokan</a> on <a href='https://www.pexels.com'>Pexels</a>
+                    </div>
+                </div>
+                
                 <a href="/places">
                     <button className="btn btn-primary">Places Page</button>
                 </a>

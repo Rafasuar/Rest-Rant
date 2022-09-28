@@ -2,3 +2,28 @@ h1 {
     text-align: center;
     color: cornflowerblue;
 }
+/* home */
+.tp {
+    height: 400px;
+    width: 400px;
+    padding: auto;
+    margin: auto;
+    left: -400px;
+}
+
+/* 404 */
+.errorpge{
+    display: block;
+
+}
+
+.errormsg {
+    text-align: center;
+    font-style: italic;
+}
+
+.jupiter {
+    padding: 10px;
+    top: 600px;
+    left: 660px;
+}
