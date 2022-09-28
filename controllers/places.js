@@ -1,4 +1,5 @@
 const router = require('express').Router()
+const places = require('../models/places.js')
 
 
 router.get('/',(req,res) => {
@@ -19,17 +20,17 @@ router.get('/new',(req,res) => {
 // CREATE //
 router.post('/', (req, res) => {
     console.log(req.body)
-    // if (!req.body.pic) {
-    //   // Default image if one is not provided
-    //   req.body.pic = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fslice-of-bread-with-center-missing-gm522598875-51392774&psig=AOvVaw3jwuhKHQEVmWC98oZuT4Eu&ust=1664421094973000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCcv__BtvoCFQAAAAAdAAAAABAE'
-    // }
-    // if (!req.body.city) {
-    //   req.body.city = 'Anytown'
-    // }
-    // if (!req.body.state) {
-    //   req.body.state = 'USA'
-    // }
-    // places.push(req.body)
+    if (!req.body.pic) {
+      // Default image if one is not provided
+      req.body.pic = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fslice-of-bread-with-center-missing-gm522598875-51392774&psig=AOvVaw3jwuhKHQEVmWC98oZuT4Eu&ust=1664421094973000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCcv__BtvoCFQAAAAAdAAAAABAE'
+    }
+    if (!req.body.city) {
+      req.body.city = 'Anytown'
+    }
+    if (!req.body.state) {
+      req.body.state = 'USA'
+    }
+    places.push(req.body)
     res.redirect('/places')
   })
 
