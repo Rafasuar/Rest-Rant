@@ -7,7 +7,7 @@ function home () {
             <main>
                 <h1>Home</h1>
                 <div>
-                    <img className='tp' src='/images/tacoPlate.jpg' alt='Carne Asada Taco Plate'/>
+                    <img className='tp' src='/images/tacoPlate.jpg' alt='Carne Asada Taco Plate' width='400px' height='300px'/>
                     <div>
                         Photo by <a href='https://www.pexels.com/@chitokan/'>Chitokan</a> on <a href='https://www.pexels.com'>Pexels</a>
                     </div>
