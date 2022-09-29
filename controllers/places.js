@@ -11,11 +11,11 @@ router.get('/',(req,res) => {
         pic: ''
 
     },{
-            name: 'Mister Kims Korean BBQ',
-            city: 'Henderson',
-            state: 'NV',
-            cuisines: 'Korean BBQ',
-            pic: ''
+        name: 'Mister Kims Korean BBQ',
+        city: 'Henderson',
+        state: 'NV',
+        cuisines: 'Korean BBQ',
+        pic: ''
     }]
     res.render('places/index', {places})
 }),
@@ -41,5 +41,18 @@ router.post('/', (req, res) => {
     res.redirect('/places')
   })
 
+// SHOW //
+router.get('/:id',(req,res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+     else if (!places[id]) {
+        res.render('error404')
+    }
+     else {
+        res.render('places/show',{place:places[id]})
+    }
+})
 
 module.exports = router

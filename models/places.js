@@ -3,7 +3,7 @@ module.exports [{
         city: 'Las Vegas',
         state: 'NV',
         cuisines: 'Mexican',
-        pic: 'https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_auto,q_auto:low,fl_lossy,dpr_2.0,c_pad,f_auto,h_168/llpwwz7vjzwfp9ujxrbk'
+        pic: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dtaqueria&psig=AOvVaw0fWVOGc3AjSf44bK-KyXPb&ust=1664580058336000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDbuJGSu_oCFQAAAAAdAAAAABAD'
 },{
     name: 'Mister Kims Korean BBQ',
     city: 'Henderson',
